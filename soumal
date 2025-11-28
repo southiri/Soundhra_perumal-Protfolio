@@ -1,0 +1,8 @@
+portfolio/
+ ├── index.md         # Main portfolio page
+ ├── assets/
+ │    └── profile.jpg # Your photo
+ └── projects/
+      ├── project1.md
+      ├── project2.md
+      └── project3.md
