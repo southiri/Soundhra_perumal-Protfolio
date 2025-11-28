@@ -1,5 +1,7 @@
 portfolio/
- ├── index.md         # Main portfolio page
+ ├── index.md    # Main portfolio page
+                 # Your Name
+                 ![Profile Picture](assets/profile.jpg)
  ├── assets/
  │    └── profile.jpg # Your photo
  └── projects/
