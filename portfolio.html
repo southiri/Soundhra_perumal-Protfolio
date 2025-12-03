@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soundhra Perumal — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed; /* purple */
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      --white: #e6eef8;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:linear-gradient(180deg,#071026 0%, #071627 100%); color:var(--white); line-height:1.5}
+    .container{max-width:1100px; margin:36px auto; padding:28px}
+
+    .top{display:grid; grid-template-columns:140px 1fr; gap:28px; align-items:center}
+    .photo{width:140px; height:140px; border-radius:18px; overflow:hidden; border:3px solid rgba(255,255,255,0.06); background:linear-gradient(135deg, rgba(124,58,237,0.12), rgba(2,6,23,0.4)); display:flex; align-items:center; justify-content:center}
+    .photo img{width:100%; height:100%; object-fit:cover}
+    h1{margin:0; font-size:24px; letter-spacing:0.2px}
+    .sub{color:var(--muted); margin-top:6px; font-size:14px}
+
+    .links{display:flex; gap:10px; margin-top:10px; align-items:center}
+    .chip{background:var(--glass); padding:6px 10px; border-radius:999px; font-size:13px; color:var(--muted); display:inline-flex; gap:8px; align-items:center}
+
+    .layout{display:grid; grid-template-columns:1fr 340px; gap:28px; margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; padding:18px; box-shadow: 0 6px 20px rgba(2,6,23,0.6)}
+
+    .section-title{display:flex; align-items:center; gap:10px; margin-bottom:14px}
+    .section-title h3{margin:0; font-size:16px}
+    .summary{color:var(--muted)}
+
+    .skills-grid{display:flex; flex-wrap:wrap; gap:10px}
+    .skill{background:var(--glass-2); padding:10px 12px; border-radius:10px; min-width:120px; display:flex; gap:10px; align-items:center}
+    .skill svg{width:28px;height:28px; opacity:0.95}
+    .skill small{display:block; color:var(--muted); font-size:12px}
+
+    .edu-item, .exp-item, .proj-item{margin-bottom:12px}
+    .muted{color:var(--muted); font-size:13px}
+
+    .right .contact{display:flex; flex-direction:column; gap:8px}
+    .contact .item{display:flex; align-items:center; gap:10px}
+    .contact .item svg{width:18px}
+
+    .projects .proj-card{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01)); padding:12px; border-radius:12px; margin-bottom:12px}
+    .proj-card header{display:flex; justify-content:space-between; align-items:center}
+    .proj-card p{margin:8px 0 0; color:var(--muted); font-size:14px}
+
+    .cta{display:flex; gap:10px; margin-top:18px}
+    .btn{padding:10px 14px; border-radius:10px; border:0; cursor:pointer; font-weight:600}
+    .btn-primary{background:linear-gradient(90deg,var(--accent), #6d28d9); color:white}
+    .btn-ghost{background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--white)}
+
+    footer{margin-top:30px; text-align:center; color:var(--muted); font-size:13px}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .layout{grid-template-columns:1fr}
+      .top{grid-template-columns:96px 1fr}
+      .photo{width:96px;height:96px;border-radius:12px}
+      .container{padding:18px}
+      .right{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <div class="photo card">
+        <!-- Replace with actual photo when available -->
+        <img src="C:\Users\Southiri\OneDrive\Pictures\image.jpg" alt="Profile Photo">
+      </div>
+      <div>
+        <h1>Soundhra Perumal</h1>
+        <div class="sub">Junior Software Developer • Madurai, India</div>
+        <div class="links">
+          <div class="chip">📞 6369089707</div>
+          <div class="chip">✉️ thiruperumal2004@gmail.com</div>
+          <a class="chip" href="#contact">LinkedIn</a>
+        </div>
+        <p class="summary" style="margin-top:12px">Motivated Junior Software Developer with a solid foundation in programming, problem-solving, and software development principles. Skilled in writing clean, efficient code and eager to learn new technologies to improve project outcomes.</p>
+      </div>
+    </div>
+
+    <div class="layout">
+      <main>
+        <section class="card">
+          <div class="section-title"><h3>Experience & Internships</h3></div>
+          <div class="exp-item">
+            <strong>Imaggar Technologies — UI/UX Intern</strong>
+            <div class="muted">Duration: 2 Months</div>
+            <p class="muted">Worked closely with the design team creating wireframes, prototypes, and assisting in visual design improvements for web and mobile applications. Collaborated with developers to enhance usability and design workflows.</p>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Projects</h3></div>
+          <div class="projects">
+            <div class="proj-card">
+              <header>
+                <strong>Phishing Kit Attacks Dataset — Phishing Detection (2025)</strong>
+                <span class="muted">Research Project</span>
+              </header>
+              <p>Developed a system to detect phishing websites by analyzing datasets and identifying malicious patterns using machine learning and security analysis techniques. The project focuses on detecting harmful scripts and improving online safety.</p>
+            </div>
+
+            <div class="proj-card">
+              <header>
+                <strong>Showroom Inventory Management (Java)</strong>
+                <span class="muted">Console Application</span>
+              </header>
+              <p>Java-based stock update system managing inventory and sales via a console interface. Implemented features for stock quantity updates, sales logging, and automatic calculations to reduce manual errors.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Education</h3></div>
+          <div class="edu-item">
+            <strong>Bachelor of Computer Science and Design</strong>
+            <div class="muted">Sethu Institute of Technology — 2021-2025 • CGPA: 7.192</div>
+          </div>
+          <div class="edu-item">
+            <strong>Higher Secondary</strong>
+            <div class="muted">VKK Play Group Mat HR Sec School — 2020-2021 • 75%</div>
+          </div>
+          <div class="edu-item">
+            <strong>SSLC</strong>
+            <div class="muted">VKK Play Group Mat HR Sec School — 2018-2019 • 65%</div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Certifications & Courses</h3></div>
+          <ul class="muted" style="margin:0;padding-left:18px">
+            <li>Junior Software Developer — Elysium Technology (2 Months)</li>
+            <li>Workshops on UI/UX — Avid Whiz Academy, Codsoft</li>
+            <li>UI/UX — Imaggar Technologies</li>
+          </ul>
+        </section>
+
+      </main>
+
+      <aside class="right">
+        <div class="card">
+          <div class="section-title"><h3>Skills</h3></div>
+          <div class="skills-grid">
+            <div class="skill">
+              <!-- Java Icon -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2s-1 1-1 2c0 1 2 2 2 2s-1 1-1 2c0 1 2 2 2 2" stroke="rgba(255,255,255,0.9)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <div>Java</div>
+                <small class="muted">OOP • Core Java</small>
+              </div>
+            </div>
+            <div class="skill">
+              <!-- HTML Icon -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18l-1.6 18L12 21l-7.4 0L3 3z" stroke="rgba(255,255,255,0.9)" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              <div><div>HTML</div><small class="muted">Semantic Markup</small></div>
+            </div>
+            <div class="skill">
+              <!-- CSS Icon -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 3h18l-1.6 18L12 21" stroke="rgba(255,255,255,0.9)" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              <div><div>CSS</div><small class="muted">Responsive • Flexbox</small></div>
+            </div>
+            <div class="skill">
+              <!-- JS Icon -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16v16H4z" stroke="rgba(255,255,255,0.9)" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              <div><div>JavaScript</div><small class="muted">DOM • ES6</small></div>
+            </div>
+            <div class="skill">
+              <!-- Tools Icon -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"/></svg>
+              <div><div>Figma • Photoshop • Canva</div><small class="muted">Design & Prototyping</small></div>
+            </div>
+          </div>
+
+          <div style="margin-top:16px">
+            <div class="section-title"><h3>Soft Skills</h3></div>
+            <div class="muted">Time Management • Teamwork • Communication • Problem Solving</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px" id="contact">
+          <div class="section-title"><h3>Contact</h3></div>
+          <div class="contact">
+            <div class="item"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 8h18M7 4h10" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"/></svg><div><strong>Email</strong><div class="muted">thiruperumal2004@gmail.com</div></div></div>
+            <div class="item"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6h12v12H6z" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"/></svg><div><strong>Phone</strong><div class="muted">6369089707</div></div></div>
+            <div class="item"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="rgba(255,255,255,0.9)" stroke-width="1.2"/></svg><div><strong>Location</strong><div class="muted">Madurai - 625016</div></div></div>
+          </div>
+
+          <div class="cta">
+            <a class="btn btn-primary" href="#projects" style="text-decoration:none;">View Projects</a>
+            <a class="btn btn-ghost" href="mailto:thiruperumal2004@gmail.com">Contact</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div class="section-title"><h3>Languages</h3></div>
+          <div class="muted">English • Tamil</div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>Designed & Built by Soundhra Perumal • Built with ❤️ — Printable & responsive</footer>
+  </div>
+</body>
+</html>
